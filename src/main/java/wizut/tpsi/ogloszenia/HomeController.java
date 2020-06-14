@@ -55,7 +55,7 @@ public class HomeController {
         List<Offer> offers;
 
         offers = offersService.getOffers(offerFilter);
-        if (offerFilter.getModelId() != null) {
+        if (offerFilter.getModelId() != null && offerFilter.getManufacturerId() != null) {
             carModels = offersService.getCarModels(offerFilter.getManufacturerId());
         } else if (offerFilter.getManufacturerId() != null) {
             carModels = offersService.getCarModels(offerFilter.getManufacturerId());

@@ -15,6 +15,7 @@ public class OfferFilter {
     private Integer minYear;
     private Integer maxYear;
     private Integer fuelType;   
+    
     public Integer getMinYear() {
         return minYear;
     }
